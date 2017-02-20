@@ -1,6 +1,6 @@
 {
     "appSecret": "f2364133dd19d2e65ceb8e7c022493e1",
-    "pageAccessToken": "EAAaSRhwxjrcBAJoiVjoBDO9ls5HNxUKy2sDRK5vZBKDz9Mdj9jmWLu4DZBGjRjRFUfSGZBZADVtzeDIYZBy54qZC4yDxbH7WBMjeGrMNeOzWs7107aGrdrmS2KwB9AXOSkpB6m8J2cmsb7ZBiuC6c1inWalP5mTHiPqgv7jdOqavQZDZD",
+    "pageAccessToken": "EAAaSRhwxjrcBAGZCUbBvOSUx6d5eLWul1b8S5zEOwHFgZCVON2nzuhg4fg3XHeOIeqzGrwc4Jn2I7yOhHvOKtDYs1GiQXCdfpCauOLvtLLSdEucroUrfTTcxu2dMnge7tEy5Nohzmy9O9uI7sCh8RGLAoL2ZC7ZAlceGdGGwigZDZD",
     "validationToken": "verification_is_imp",
-    "serverURL": "https://fb-messengerbot-master.herokuapp.com/"
+    "serverURL": "https://simple-restaurant-bot.herokuapp.com/"
 }
