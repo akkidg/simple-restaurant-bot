@@ -276,11 +276,11 @@ function receivedMessage(event) {
         break;        
 
       default:
-        //sendTypingOn(senderID);
+        sendTypingOn(senderID);
         sendWelcomeMessage(senderID);
     }
   } else if (messageAttachments) {
-    //sendTypingOn(senderID);
+    sendTypingOn(senderID);
     sendWelcomeMessage(senderID);
   }
 }
@@ -396,9 +396,10 @@ function sendWelcomeMessage(recipientId) {
               subtitle:"We\'ve got the right hat for everyone.",
               default_action: {
                 type: "web_url",
-                url: "https://www.oculus.com/en-us",
+                url: "https://www.famousgreeksalads.com",
                 messenger_extensions: true,
-                webview_height_ratio: "tall"
+                webview_height_ratio: "tall",
+                fallback_url: "https://www.famousgreeksalads.com"
               },
               buttons:[
                 {
