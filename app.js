@@ -276,10 +276,10 @@ function receivedMessage(event) {
         break;        
 
       default:
-        sendWelcomeMessage(senderID, messageText);
+        sendWelcomeMessage(senderID);
     }
   } else if (messageAttachments) {
-    sendWelcomeMessage(senderID, "Message with attachment received");
+    sendWelcomeMessage(senderID);
   }
 }
 
