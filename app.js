@@ -276,11 +276,11 @@ function receivedMessage(event) {
         break;        
 
       default:
-        sendTypingOn(senderID);
+        //sendTypingOn(senderID);
         sendWelcomeMessage(senderID);
     }
   } else if (messageAttachments) {
-    sendTypingOn(senderID);
+    //sendTypingOn(senderID);
     sendWelcomeMessage(senderID);
   }
 }
