@@ -421,12 +421,12 @@ function sendWelcomeMessage(recipientId) {
                   type:"postback",
                   title:"Our Location",
                   payload:"DEVELOPER_DEFINED_PAYLOAD_FOR_LOCATION"
-                },
+                }/*,
                 {
                   type:"postback",
                   title:"Call",
                   payload:"DEVELOPER_DEFINED_PAYLOAD_FOR_CALL"
-                }              
+                }  */            
               ]      
             }
           ]
