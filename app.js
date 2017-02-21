@@ -276,11 +276,11 @@ function receivedMessage(event) {
         break;        
 
       default:
-        //sendTypingOn(senderID);
+        sendTypingOn(senderID);
         sendWelcomeMessage(senderID);
     }
   } else if (messageAttachments) {
-    //sendTypingOn(senderID);
+    sendTypingOn(senderID);
     sendWelcomeMessage(senderID);
   }
 }
@@ -384,7 +384,6 @@ function sendWelcomeMessage(recipientId) {
     recipient: {
       id: recipientId
     },
-    sender_action: "typing_on",
     message: {        
       attachment:{
         type:"template",
