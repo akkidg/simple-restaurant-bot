@@ -408,7 +408,7 @@ function sendWelcomeMessage(recipientId) {
                   payload:"DEVELOPER_DEFINED_PAYLOAD_FOR_MENU"
                 },
                 {
-                    typ:"postback",
+                    type:"postback",
                     title:"Opening Hours",
                     payload:"DEVELOPER_DEFINED_PAYLOAD_FOR_OPENING_HOURS"
                 },
