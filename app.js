@@ -276,11 +276,11 @@ function receivedMessage(event) {
         break;        
 
       default:
-        sendTypingOn(senderID);
+        //sendTypingOn(senderID);
         sendWelcomeMessage(senderID);
     }
   } else if (messageAttachments) {
-    sendTypingOn(senderID);
+    //sendTypingOn(senderID);
     sendWelcomeMessage(senderID);
   }
 }
@@ -384,6 +384,7 @@ function sendWelcomeMessage(recipientId) {
     recipient: {
       id: recipientId
     },
+    sender_action: "typing_on",
     message: {        
       attachment:{
         type:"template",
@@ -416,12 +417,12 @@ function sendWelcomeMessage(recipientId) {
                   type:"postback",
                   title:"Place An Order",
                   payload:"DEVELOPER_DEFINED_PAYLOAD_PLACE_ORDER"
-                }/*,
+                },
                 {
                   type:"postback",
                   title:"Our Location",
                   payload:"DEVELOPER_DEFINED_PAYLOAD_FOR_LOCATION"
-                },
+                }/*,
                 {
                   type:"postback",
                   title:"Call",
