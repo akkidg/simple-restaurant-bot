@@ -396,10 +396,10 @@ function sendWelcomeMessage(recipientId) {
               subtitle:"We\'ve got the right hat for everyone.",
               default_action: {
                 type: "web_url",
-                url: "https://peterssendreceiveapp.ngrok.io/view?item=103",
+                url: "https://www.famousgreeksalads.com/",
                 messenger_extensions: true,
                 webview_height_ratio: "tall",
-                fallback_url: "https://peterssendreceiveapp.ngrok.io/"
+                fallback_url: "https://www.famousgreeksalads.com/"
               },
               buttons:[
                 {
