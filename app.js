@@ -396,7 +396,7 @@ function sendWelcomeMessage(recipientId) {
               subtitle:"We\'ve got the right hat for everyone.",
               default_action: {
                 type: "web_url",
-                url: "https://www.famousgreeksalads.com/",
+                url: "https://www.oculus.com/en-us",
                 messenger_extensions: true,
                 webview_height_ratio: "tall"
               },
