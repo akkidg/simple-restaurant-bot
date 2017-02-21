@@ -398,8 +398,7 @@ function sendWelcomeMessage(recipientId) {
                 type: "web_url",
                 url: "https://www.famousgreeksalads.com/",
                 messenger_extensions: true,
-                webview_height_ratio: "tall",
-                fallback_url: "https://www.famousgreeksalads.com/"
+                webview_height_ratio: "tall"
               },
               buttons:[
                 {
