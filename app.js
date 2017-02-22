@@ -552,7 +552,7 @@ function sendOpeningHoursText(recipientId){
     recipient: {
       id: recipientId
     },message:{
-      text:"RESTAURANT HOURS Sunday 11:00AM - 04:00PM Monday thru Saturday 11:00AM - 08:30PM"
+      text:"RESTAURANT HOURS\nSunday 11:00AM - 04:00PM\nMonday thru Saturday 11:00AM - 08:30PM"
     }
   };
 
