@@ -514,13 +514,7 @@ function sendMainMenu(recipientId){
               url: "https://www.famousgreeksalads.com/order-food-online/Party-Platters/c=2761/clear/",
               title: "Checkout"
             }]
-          }],
-          quick_replies: [
-            {
-              "content_type":"text",
-              "title":"Call",
-              "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_CALL_ACTION"
-            }]
+          }]
         }
       }
     }    
