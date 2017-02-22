@@ -343,8 +343,13 @@ function receivedPostback(event) {
         case 'DEVELOPER_DEFINED_PAYLOAD_FOR_OPENING_HOURS':
           sendOpeningHoursText(senderID);
         break;
+        default:
+        sendTypingOn(senderID);
+        sendWelcomeMessage(senderID);
     }
-
+   }else{
+        sendTypingOn(senderID);
+        sendWelcomeMessage(senderID);
    } 
 
   // When a postback is called, we'll send a message back to the sender to 
