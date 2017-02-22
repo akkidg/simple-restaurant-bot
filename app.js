@@ -482,7 +482,7 @@ function sendMainMenu(recipientId){
           }, {
             title: "Appetiser",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Soups-and-Starters/c=1518/clear/",               
-            image_url: :"https://www.famousgreeksalads.com/_upload/slideshow/13401465644405939908.jpg",
+            image_url: :"https://www.famousgreeksalads.com/_upload/slideshow/13401483603012685235.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Soups-and-Starters/c=1518/clear/",
@@ -491,7 +491,7 @@ function sendMainMenu(recipientId){
           },{
             title: "Dessert",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Desserts/c=1524/clear/",               
-            image_url: :"https://www.famousgreeksalads.com/_upload/slideshow/13401465644405939908.jpg",
+            image_url: :"https://www.famousgreeksalads.com/_upload/slideshow/13401483603012685235.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Desserts/c=1524/clear/",
@@ -500,7 +500,7 @@ function sendMainMenu(recipientId){
           },{
             title: "Party Salads",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Party-Salads/c=1587/clear/",               
-            image_url: :"https://www.famousgreeksalads.com/_upload/slideshow/13401465644405939908.jpg",
+            image_url: :"https://www.famousgreeksalads.com/_upload/slideshow/13401483603012685235.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Party-Salads/c=1587/clear/",
