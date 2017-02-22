@@ -458,72 +458,53 @@ function sendWelcomeMessage(recipientId) {
 }
 
 
-
 function sendMainMenu(recipientId){
 
   var messageData = {
     recipient: {
       id: recipientId
     },
-    message: {        
-      attachment:{
+    message: { 
+      attachment: {
         type: "template",
         payload: {
           template_type: "generic",
           elements: [{
-            title: "Family Meals",
-            item_url: "https://www.famousgreeksalads.com/order-food-online/Family-Meals/c=5864/clear/",               
-            image_url: "https://www.famousgreeksalads.com/_upload/slideshow/13401481191902759378.jpg",
+            title: "rift",
+            subtitle: "Next-generation virtual reality",
+            item_url: "https://www.oculus.com/en-us/rift/",               
+            image_url: SERVER_URL + "/assets/rift.png",
             buttons: [{
               type: "web_url",
-              url: "https://www.famousgreeksalads.com/order-food-online/Family-Meals/c=5864/clear/",
-              title: "Checkout"
-            }]
+              url: "https://www.oculus.com/en-us/rift/",
+              title: "Open Web URL"
+            }, {
+              type: "postback",
+              title: "Call Postback",
+              payload: "Payload for first bubble",
+            }],
           }, {
-            title: "Appetiser",
-            item_url: "https://www.famousgreeksalads.com/order-food-online/Soups-and-Starters/c=1518/clear/",               
-            image_url: :"https://www.famousgreeksalads.com/_upload/slideshow/13401481191902759378.jpg",
+            title: "touch",
+            subtitle: "Your Hands, Now in VR",
+            item_url: "https://www.oculus.com/en-us/touch/",               
+            image_url: SERVER_URL + "/assets/touch.png",
             buttons: [{
               type: "web_url",
-              url: "https://www.famousgreeksalads.com/order-food-online/Soups-and-Starters/c=1518/clear/",
-              title: "Checkout"
-            }]
-          },{
-            title: "Dessert",
-            item_url: "https://www.famousgreeksalads.com/order-food-online/Desserts/c=1524/clear/",               
-            image_url: :"https://www.famousgreeksalads.com/_upload/slideshow/13401481191902759378.jpg",
-            buttons: [{
-              type: "web_url",
-              url: "https://www.famousgreeksalads.com/order-food-online/Desserts/c=1524/clear/",
-              title: "Checkout"
-            }]
-          },{
-            title: "Party Salads",
-            item_url: "https://www.famousgreeksalads.com/order-food-online/Party-Salads/c=1587/clear/",               
-            image_url: :"https://www.famousgreeksalads.com/_upload/slideshow/13401481191902759378.jpg",
-            buttons: [{
-              type: "web_url",
-              url: "https://www.famousgreeksalads.com/order-food-online/Party-Salads/c=1587/clear/",
-              title: "Checkout"
-            }]
-          },{
-            title: "Party Platters",
-            item_url: "https://www.famousgreeksalads.com/order-food-online/Party-Platters/c=2761/clear/",               
-            image_url: :"https://www.famousgreeksalads.com/_upload/slideshow/13401481191902759378.jpg",
-            buttons: [{
-              type: "web_url",
-              url: "https://www.famousgreeksalads.com/order-food-online/Party-Platters/c=2761/clear/",
-              title: "Checkout"
+              url: "https://www.oculus.com/en-us/touch/",
+              title: "Open Web URL"
+            }, {
+              type: "postback",
+              title: "Call Postback",
+              payload: "Payload for second bubble",
             }]
           }]
         }
-      }
+      }    
     }    
   };
 
   callSendAPI(messageData);
 }
-
 
 /*
  * Turn typing indicator on
