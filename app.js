@@ -547,6 +547,20 @@ function sendLocationTemplate(recipientId){
   callSendAPI(messageData);
 }
 
+function sendOpeningHoursText(recipientId){
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },message:{
+      text:"RESTAURANT HOURS \n
+            Sunday 11:00AM - 04:00PM \n
+            Monday thru Saturday 11:00AM - 08:30PM"
+    }
+  };
+
+  callSendAPI(messageData);
+}
+
 /*
  * Turn typing indicator on
  *
