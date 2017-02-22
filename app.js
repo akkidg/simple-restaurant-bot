@@ -536,7 +536,7 @@ function sendLocationTemplate(recipientId){
           elements:[
           {
             title:"Famous Greek Salads",
-            image_url:"https://maps.googleapis.com/maps/api/staticmap?center=28.012431,-82.7138837&markers=color:red%7Clabel:C%7C28.012431,-82.7138837&zoom=16&size=600x400&key=AIzaSyBJqqGGwS1HthhCLL1HC8F5AcUeMu6eQVs",
+            image_url:"https://maps.googleapis.com/maps/api/staticmap?center=28.012431,-82.7138837&markers=color:red%7Clabel:C%7C28.012431,-82.7138837&zoom=17size=600x400&key=AIzaSyBJqqGGwS1HthhCLL1HC8F5AcUeMu6eQVs",
             item_url:"https://www.google.co.in/maps/place/Famous+Greek+Salads/@28.012431,-82.7138837,17z/data=!3m1!4b1!4m5!3m4!1s0x88c2ee75f53b20b9:0xdeb12856e08e448d!8m2!3d28.012431!4d-82.711695"    
           }
           ]
