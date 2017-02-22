@@ -406,22 +406,24 @@ function sendWelcomeMessage(recipientId) {
                   type:"postback",
                   title:"Menu",
                   payload:"DEVELOPER_DEFINED_PAYLOAD_FOR_MENU"
-                },                
-                {
-                    type:"postback",
-                    title:"Opening Hours",
-                    payload:"DEVELOPER_DEFINED_PAYLOAD_FOR_OPENING_HOURS"
                 },
-                {
-                  type:"postback",
-                  title:"Place An Order",
-                  payload:"DEVELOPER_DEFINED_PAYLOAD_PLACE_ORDER"
-                }/*,
                 {
                   type:"postback",
                   title:"Our Location",
                   payload:"DEVELOPER_DEFINED_PAYLOAD_FOR_LOCATION"
                 },
+                {
+                    type:"postback",
+                    title:"Opening Hours",
+                    payload:"DEVELOPER_DEFINED_PAYLOAD_FOR_OPENING_HOURS"
+                }
+                /*,
+                {
+                  type:"postback",
+                  title:"Place An Order",
+                  payload:"DEVELOPER_DEFINED_PAYLOAD_PLACE_ORDER"
+                }                                
+                ,
                 {
                   type:"postback",
                   title:"Call",
