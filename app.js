@@ -410,7 +410,7 @@ function sendWelcomeMessage(recipientId) {
              {
               title:"Welcome to Famous Greek ",
               image_url:"https://www.famousgreeksalads.com/_upload/slideshow/13401481191902759378.jpg",
-              subtitle:"We\'ve got the right hat for everyone.",
+              subtitle:"Try Delicious Food",
               default_action: {
                 type: "web_url",
                 url: "https://www.famousgreeksalads.com",
