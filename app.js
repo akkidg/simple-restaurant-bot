@@ -343,6 +343,9 @@ function receivedPostback(event) {
         case 'DEVELOPER_DEFINED_PAYLOAD_FOR_OPENING_HOURS':
           sendOpeningHoursText(senderID);
         break;
+        case 'GET_STARTED_BUTTON_PAYLOAD':
+        console.log("Received postback for get started button");
+        break;
         default:
         sendTypingOn(senderID);
         sendWelcomeMessage(senderID);
