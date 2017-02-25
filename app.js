@@ -630,7 +630,7 @@ function sendAllSpecial(recipientId){
             }],
           }, {
             title: "Famous Greek Combo",
-            subtitle:"",
+            subtitle:"Choice of Grilled Chicken or Sliced Gyro over rice with a side Greek salad and choice of any Famous Spread with pita!",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Famous-Favorites/c=6239/clear/",               
             image_url: "https://www.famousgreeksalads.com/_upload/slideshow/13401465644405939908.jpg",
             buttons: [{
@@ -640,7 +640,7 @@ function sendAllSpecial(recipientId){
             }]
           },{
             title: "Moussaka",
-            subtitle:"",
+            subtitle:"Layers of eggplant, ground beef, and a creamy bechamel with a hint of cinnamon. Served with a side Greek salad!",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Famous-Favorites/c=6239/clear/",               
             image_url: "https://www.famousgreeksalads.com/_upload/slideshow/13401465644405939908.jpg",
             buttons: [{
