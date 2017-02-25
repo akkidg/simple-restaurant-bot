@@ -283,8 +283,7 @@ function receivedMessage(event) {
         sendWelcomeMessage(senderID);  
         setTimeout(function(){    
           sendQuickReplySpecial(senderID);
-        },delayMills);      
-        sendQuickReplySpecial(senderID);
+        },delayMills);     
     }
   } else if (messageAttachments) {
     sendTypingOn(senderID);
