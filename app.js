@@ -245,8 +245,8 @@ function receivedMessage(event) {
     console.log("Quick reply for message %s with payload %s",
       messageId, quickReplyPayload);
 
-    sendTextMessage(senderID, "Quick reply tapped");
-    return;
+    receivedQuickReplyPostback(event);
+
   }
 
   if (messageText) {
@@ -315,6 +315,52 @@ function receivedDeliveryConfirmation(event) {
 
 
 /*
+ * Quick Reply Postback Event
+ *
+ * This event is called when a postback is tapped on a Quick Reply. 
+ * https://developers.facebook.com/docs/messenger-platform/webhook-reference/postback-received
+ * 
+ */
+
+function receivedQuickReplyPostback(event) {
+  var senderID = event.sender.id;
+  var recipientID = event.recipient.id;
+  var timeOfPostback = event.timestamp;
+
+  // The 'payload' param is a developer-defined field which is set in a postback 
+  // button for Structured Messages. 
+  var payload = event.postback.payload;
+
+  console.log("Received postback for user %d and page %d with payload '%s' " + 
+    "at %d", senderID, recipientID, payload, timeOfPostback);
+
+   if (payload) {
+    // If we receive a text payload, check to see if it matches any special
+    switch (payload) {
+        case 'DEVELOPER_DEFINED_PAYLOAD_FOR_ALL_SPECIAL':
+          sendTypingOn(senderID);
+          sendAllSpecial(senderID);
+        break;
+        case 'DEVELOPER_DEFINED_PAYLOAD_FOR_DAILY_SPECIAL':
+          sendTypingOn(senderID);
+          sendDailySpecial(senderID);
+        break;
+        case 'DEVELOPER_DEFINED_PAYLOAD_FOR_PARTY_SPECIAL':
+          sendTypingOn(senderID);
+          sendPartySpecial(senderID);
+        default:
+        sendTypingOn(senderID);
+        sendWelcomeMessage(senderID);
+    }
+   }else{
+        sendTypingOn(senderID);
+        sendWelcomeMessage(senderID);
+   } 
+
+}
+
+
+/*
  * Postback Event
  *
  * This event is called when a postback is tapped on a Structured Message. 
@@ -360,6 +406,7 @@ function receivedPostback(event) {
           sendDailySpecial(senderID);
         break;
         case 'DEVELOPER_DEFINED_PAYLOAD_FOR_PARTY_SPECIAL':
+          sendTypingOn(senderID);
           sendPartySpecial(senderID);
         default:
         sendTypingOn(senderID);
