@@ -277,11 +277,13 @@ function receivedMessage(event) {
 
       default:
         sendTypingOn(senderID);
-        sendWelcomeMessage(senderID);
+        sendWelcomeMessage(senderID);        
+        sendQuickReplySpecial(senderID);
     }
   } else if (messageAttachments) {
     sendTypingOn(senderID);
-    sendWelcomeMessage(senderID);
+    sendWelcomeMessage(senderID);    
+    sendQuickReplySpecial(senderID);
   }
 }
 
@@ -361,13 +363,11 @@ function receivedPostback(event) {
           sendPartySpecial(senderID);
         default:
         sendTypingOn(senderID);
-        //sendWelcomeMessage(senderID);
-        sendQuickReplySpecial(senderID);
+        sendWelcomeMessage(senderID);
     }
    }else{
         sendTypingOn(senderID);
-        //sendWelcomeMessage(senderID);
-        sendQuickReplySpecial(senderID);
+        sendWelcomeMessage(senderID);
    } 
 
 }
