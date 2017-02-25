@@ -24,6 +24,9 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.json({ verify: verifyRequestSignature }));
 app.use(express.static('public'));
 
+// Time Delay variable
+var delayMills = 1000;
+
 /*
  * Be sure to setup your config values before running this code. You can 
  * set them using environment variables or modifying the config file in /config.
@@ -277,16 +280,20 @@ function receivedMessage(event) {
 
       default:
         sendTypingOn(senderID);
-        sendWelcomeMessage(senderID);        
+        sendWelcomeMessage(senderID);  
+        setTimeout(function(){    
+          sendQuickReplySpecial(senderID);
+        },delayMills);      
         sendQuickReplySpecial(senderID);
     }
   } else if (messageAttachments) {
     sendTypingOn(senderID);
-    sendWelcomeMessage(senderID);    
-    sendQuickReplySpecial(senderID);
+    sendWelcomeMessage(senderID);
+    setTimeout(function(){    
+      sendQuickReplySpecial(senderID);
+    },delayMills);
   }
 }
-
 
 /*
  * Delivery Confirmation Event
