@@ -277,12 +277,12 @@ function receivedMessage(event) {
 
       default:
         sendTypingOn(senderID);
-        sendWelcomeMessage(senderID);        
+        //sendWelcomeMessage(senderID);        
         sendQuickReplySpecial(senderID);
     }
   } else if (messageAttachments) {
     sendTypingOn(senderID);
-    sendWelcomeMessage(senderID);    
+    //sendWelcomeMessage(senderID);    
     sendQuickReplySpecial(senderID);
   }
 }
