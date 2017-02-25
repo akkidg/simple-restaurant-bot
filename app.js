@@ -361,12 +361,12 @@ function receivedPostback(event) {
           sendPartySpecial(senderID);
         default:
         sendTypingOn(senderID);
-        sendWelcomeMessage(senderID);
+        //sendWelcomeMessage(senderID);
         sendQuickReplySpecial(senderID);
     }
    }else{
         sendTypingOn(senderID);
-        sendWelcomeMessage(senderID);
+        //sendWelcomeMessage(senderID);
         sendQuickReplySpecial(senderID);
    } 
 
