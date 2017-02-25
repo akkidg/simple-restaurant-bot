@@ -249,7 +249,7 @@ function receivedMessage(event) {
       messageId, quickReplyPayload);
 
     receivedQuickReplyPostback(event);
-
+    return;
   }
 
   if (messageText) {
