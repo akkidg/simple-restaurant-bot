@@ -681,7 +681,7 @@ function sendDailySpecial(recipientId){
             }],
           }, {
             title: "Family Meal for 4 - Subs and Pitas",
-            subtitle:"A great selection of our Famous sandwiches with a family size Greek salad!"
+            subtitle:"A great selection of our Famous sandwiches with a family size Greek salad!",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Family-Meals/c=5864/clear/",               
             image_url: "https://www.famousgreeksalads.com/_upload/slideshow/13401465644405939908.jpg",
             buttons: [{
