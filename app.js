@@ -362,12 +362,12 @@ function receivedPostback(event) {
         default:
         sendTypingOn(senderID);
         sendWelcomeMessage(senderID);
-        sendQuickReply();
+        sendQuickReplySpecial();
     }
    }else{
         sendTypingOn(senderID);
         sendWelcomeMessage(senderID);
-        sendQuickReply();
+        sendQuickReplySpecial();
    } 
 
 }
