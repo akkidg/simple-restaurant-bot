@@ -326,10 +326,12 @@ function receivedQuickReplyPostback(event) {
   var senderID = event.sender.id;
   var recipientID = event.recipient.id;
   var timeOfPostback = event.timestamp;
+  var message = event.message;
 
   // The 'payload' param is a developer-defined field which is set in a postback 
   // button for Structured Messages. 
-  var payload = event.postback.payload;
+  var quickReply = message.quick_reply;
+  var payload = quickReply.payload;
 
   console.log("Received postback for user %d and page %d with payload '%s' " + 
     "at %d", senderID, recipientID, payload, timeOfPostback);
