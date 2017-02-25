@@ -288,9 +288,9 @@ function receivedMessage(event) {
   } else if (messageAttachments) {
     sendTypingOn(senderID);
     sendWelcomeMessage(senderID);
-    setTimeout(function(){    
+    /*setTimeout(function(){    
       sendQuickReplySpecial(senderID);
-    },delayMills);
+    },delayMills);*/
   }
 }
 
