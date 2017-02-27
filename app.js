@@ -365,7 +365,7 @@ function receivedQuickReplyPostback(event) {
           showReviews(senderID);
         break;
         case 'DEVELOPER_DEFINED_PAYLOAD_FOR_TESTIMONALS':
-          sendTestimonials(senderID);
+          showTestimonials(senderID);
         break;
         default:
         sendTypingOn(senderID);
@@ -436,7 +436,7 @@ function receivedPostback(event) {
 
         break;
         case 'DEVELOPER_DEFINED_PAYLOAD_FOR_MAIN_MENU_BACK':
-          showReviews(senderID);
+          sendQuickRepliesActions(senderID);
         break;
         default:
         sendTypingOn(senderID);
@@ -920,7 +920,7 @@ function sendQuickRepliesActions(recipientId){
   callSendAPI(messageData);
 }
 
-function sendTestimonials(recipientId){
+function showTestimonials(recipientId){
   var messageData = {
     recipient: {
       id: recipientId
