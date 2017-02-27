@@ -993,7 +993,7 @@ function showReviews(recipientId){
     }    
   };
 
-  callSendAPI(messageData
+  callSendAPI(messageData);
 }
 
 /*
