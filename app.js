@@ -936,52 +936,28 @@ function showReviews(recipientId){
       attachment:{
         type: "template",
         payload: {
-          template_type: "generic",
+          template_type: "list",
+          top_element_style: "compact",
           elements: [{
             title: "Christina R.",
             subtitle:"This place gets busy! And it seems like there are some repeat customers because the waitress (the only waitress working) knew people's names. The waitress was FAST, efficient, patient, she was great for handling all of those tables. She was so chipper and happy too. The food was spot on, there is a reason why 'famous' is in the name of their restaurant. You can sit inside or outside where there are tables out front. I've seen people bring their dogs with them to sit outside too. The entire staff is nice, even the nice guy that brings the food out. They do take out, and deliver ($50 min I believe).",
-            item_url: "https://www.yelp.com/biz/famous-greek-salads-clearwater",  
-            buttons: [{
-              type: "postback",
-              payload: "DEVELOPER_DEFINED_PAYLOAD_FOR_REVIEWS_BACK",
-              title: "Back"
-            }],
+            item_url: "https://www.yelp.com/biz/famous-greek-salads-clearwater"
           },{
             title: "Kyle P.",
             subtitle:"I used to eat here two times a week and man do I miss it. We have since moved and I have not found a Greek restaurant that compares. Mike and Mike Jr. both have great personal service.  You can tell that they take pride in their food and care about your personal experience with them.  Highly recommend this place!",
-            item_url: "https://www.yelp.com/biz/famous-greek-salads-clearwater",  
-            buttons: [{
-              type: "postback",
-              payload: "DEVELOPER_DEFINED_PAYLOAD_FOR_REVIEWS_BACK",
-              title: "Back"
-            }]
+            item_url: "https://www.yelp.com/biz/famous-greek-salads-clearwater"
           },{
             title: "Bill K.",
             subtitle:"The Moussaka is just amazing!! Coupled with the Greek Salad that accompanies it- you have a meal you just can't beat!  Really like this quaint little place and all its amazing menu items!",
-            item_url: "https://www.yelp.com/biz/famous-greek-salads-clearwater",
-            buttons: [{
-              type: "postback",
-              payload: "DEVELOPER_DEFINED_PAYLOAD_FOR_REVIEWS_BACK",
-              title: "Back"
-            }]
+            item_url: "https://www.yelp.com/biz/famous-greek-salads-clearwater"
           },{
             title: "Tori B.",
             subtitle:"No Complaints from this girl.  We order from here at least twice a month the food is always fresh and hot.  The online ordering system is easy to navigate and customizable for  people like me who can never order an item as it comes. I always have to change something and the online system lets me do that.\nThe 1/4 chicken is always crispy and juicy at the same time , the mini Greek salad is more than enough to fill me up.  Spanikopita oh how I love thee crispy and full of flavor. The potato salad is always flavorful and never bland perfect blend of spices.",
-            item_url: "https://www.yelp.com/biz/famous-greek-salads-clearwater",
-            buttons: [{
-              type: "postback",
-              payload: "DEVELOPER_DEFINED_PAYLOAD_FOR_REVIEWS_BACK",
-              title: "Back"
-            }]
+            item_url: "https://www.yelp.com/biz/famous-greek-salads-clearwater"
           },{
             title: "Shauna J.",
             subtitle:"Delicious and inexpensive. Really sweet staff too. I was just passing through and I would love to have it be a regular!! :)",
-            item_url: "https://www.yelp.com/biz/famous-greek-salads-clearwater",
-            buttons: [{
-              type: "postback",
-              payload: "DEVELOPER_DEFINED_PAYLOAD_FOR_REVIEWS_BACK",
-              title: "Back"
-            }]
+            item_url: "https://www.yelp.com/biz/famous-greek-salads-clearwater"
           }]
         }
       }
