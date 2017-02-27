@@ -281,7 +281,7 @@ function receivedMessage(event) {
         sendTypingOn(senderID);
         sendPartySpecial(senderID);
         break;        
-
+ 
       default:
         sendTypingOn(senderID);
         sendWelcomeMessage(senderID);  
@@ -897,11 +897,6 @@ function sendQuickRepliesActions(recipientId){
     },
     message: {
       quick_replies: [
-        {
-          "type":"phone_number",
-          "title":"Call",
-          "payload":"+17277974998"
-        },
         {
           "content_type":"text",
           "title":"Testimonials",
