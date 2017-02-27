@@ -75,7 +75,6 @@ app.get('/webhook', function(req, res) {
   }  
 });
 
-
 /*
  * All callbacks for Messenger are POST-ed. They will be sent to the same
  * webhook. Be sure to subscribe your app to your page to receive callbacks
@@ -265,7 +264,7 @@ function receivedMessage(event) {
 
       case 'special':
         sendTypingOn(senderID);
-        sendAllSpecial(recipientId);
+        sendAllSpecial(senderID);
         break;
 
       case 'special dishes':
