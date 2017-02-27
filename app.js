@@ -954,10 +954,6 @@ function showReviews(recipientId){
             title: "Tori B.",
             subtitle:"No Complaints from this girl.  We order from here at least twice a month the food is always fresh and hot.  The online ordering system is easy to navigate and customizable for  people like me who can never order an item as it comes. I always have to change something and the online system lets me do that.\nThe 1/4 chicken is always crispy and juicy at the same time , the mini Greek salad is more than enough to fill me up.  Spanikopita oh how I love thee crispy and full of flavor. The potato salad is always flavorful and never bland perfect blend of spices.",
             item_url: "https://www.yelp.com/biz/famous-greek-salads-clearwater"
-          },{
-            title: "Shauna J.",
-            subtitle:"Delicious and inexpensive. Really sweet staff too. I was just passing through and I would love to have it be a regular!! :)",
-            item_url: "https://www.yelp.com/biz/famous-greek-salads-clearwater"
           }]
         }
       }
