@@ -260,6 +260,9 @@ function receivedMessage(event) {
       case 'menu':
         sendTypingOn(senderID);
         sendMainMenu(senderID);
+        setTimeout(function(){    
+            greetText(senderID);
+          },delayMills);
       break;
 
       case 'special':
@@ -363,6 +366,10 @@ function receivedQuickReplyPostback(event) {
         case 'DEVELOPER_DEFINED_PAYLOAD_FOR_TESTIMONALS':
           showTestimonials(senderID);
         break;
+        case 'DEVELOPER_DEFINED_PAYLOAD_START_OVER':
+          sendTypingOn(senderID);
+          sendWelcomeMessage(senderID);
+        break;        
         default:
         sendTypingOn(senderID);
         sendWelcomeMessage(senderID);
@@ -912,6 +919,11 @@ function sendQuickRepliesActions(recipientId){
           "content_type":"text",
           "title":"Reviews",
           "payload":"DEVELOPER_DEFINED_PAYLOAD_REVIEWS"
+        },
+        {
+          "content_type":"text",
+          "title":"Start Over",
+          "payload":"DEVELOPER_DEFINED_PAYLOAD_START_OVER"
         }
       ]
     }
@@ -966,6 +978,18 @@ function showReviews(recipientId){
   };
 
   callSendAPI(messageData);*/
+}
+
+function greetText(){
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },message:{
+      text:"Hiii, We'r happy to see u.."
+    }
+  };
+
+  callSendAPI(messageData);
 }
 
 /*
