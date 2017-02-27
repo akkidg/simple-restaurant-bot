@@ -896,6 +896,7 @@ function sendQuickRepliesActions(recipientId){
       id: recipientId
     },
     message: {
+      text: "",
       quick_replies: [
         {
           "content_type":"text",
