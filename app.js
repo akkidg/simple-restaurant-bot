@@ -284,10 +284,7 @@ function receivedMessage(event) {
  
       default:
         sendTypingOn(senderID);
-        sendWelcomeMessage(senderID);  
-        setTimeout(function(){    
-          sendQuickReplySpecial(senderID);
-        },delayMills);     
+        sendWelcomeMessage(senderID);     
     }
   } else if (messageAttachments) {
     sendTypingOn(senderID);
@@ -406,11 +403,19 @@ function receivedPostback(event) {
         case 'DEVELOPER_DEFINED_PAYLOAD_FOR_LOCATION':
           sendTypingOn(senderID);
           sendLocationTemplate(senderID);
+
+          setTimeout(function(){    
+            sendQuickReplySpecial(senderID);
+          },delayMills);
         break;
         case 'DEVELOPER_DEFINED_PAYLOAD_FOR_OPENING_HOURS':
           sendTypingOn(senderID);
           sendOpeningHoursText(senderID);
-        break;
+
+          setTimeout(function(){    
+            sendQuickReplySpecial(senderID);
+          },delayMills);
+          break;
         case 'GET_STARTED_BUTTON_PAYLOAD':
           console.log("Received postback for get started button");
         break;
@@ -425,17 +430,17 @@ function receivedPostback(event) {
         case 'DEVELOPER_DEFINED_PAYLOAD_FOR_PARTY_SPECIAL':
           sendTypingOn(senderID);
           sendPartySpecial(senderID);
-        case 'DEVELOPER_DEFINED_PAYLOAD_FOR_ALL_SPECIAL_BACK':
-
+        case 'DEVELOPER_DEFINED_PAYLOAD_FOR_ALL_SPECIAL_BACK':          
+          sendQuickRepliesActions(senderID);
         break;
         case 'DEVELOPER_DEFINED_PAYLOAD_FOR_DAILY_SPECIAL_BACK':
-
+          sendQuickRepliesActions(senderID);
         break;
         case 'DEVELOPER_DEFINED_PAYLOAD_FOR_PARTY_SPECIAL_BACK':
-
-        break;
-        case 'DEVELOPER_DEFINED_PAYLOAD_FOR_MAIN_MENU_BACK':
           sendQuickRepliesActions(senderID);
+        break;
+        case 'DEVELOPER_DEFINED_PAYLOAD_FOR_MAIN_MENU_BACK':        
+            sendQuickReplySpecial(senderID);
         break;
         default:
         sendTypingOn(senderID);
@@ -896,7 +901,7 @@ function sendQuickRepliesActions(recipientId){
       id: recipientId
     },
     message: {
-      text: "quick replies",
+      text: "Get Connected with us...",
       quick_replies: [
         {
           "content_type":"text",
@@ -928,7 +933,7 @@ function showTestimonials(recipientId){
 }
 
 function showReviews(recipientId){
-  var messageData = {
+  /*var messageData = {
     recipient: {
       id: recipientId
     },
@@ -937,7 +942,7 @@ function showReviews(recipientId){
         type: "template",
         payload: {
           template_type: "list",
-          top_element_style: "top_element_style",
+          top_element_style: "com",
           elements: [{
             title: "Christina R.",
             subtitle:"This place gets busy! And it seems like there are some repeat customers because the waitress (the only waitress working) knew people's names. The waitress was FAST, efficient, patient, she was great for handling all of those tables. She was so chipper and happy too. The food was spot on, there is a reason why 'famous' is in the name of their restaurant. You can sit inside or outside where there are tables out front. I've seen people bring their dogs with them to sit outside too. The entire staff is nice, even the nice guy that brings the food out. They do take out, and deliver ($50 min I believe).",
@@ -960,7 +965,7 @@ function showReviews(recipientId){
     }    
   };
 
-  callSendAPI(messageData);
+  callSendAPI(messageData);*/
 }
 
 /*
