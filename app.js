@@ -252,30 +252,35 @@ function receivedMessage(event) {
     return;
   }
 
-  if (messageText) {
+  if (messageText.toLowerCase()) {
 
     // If we receive a text message, check to see if it matches any special
     // keywords and send back the corresponding example. Otherwise, just echo
     // the text we received.
     switch (messageText) {      
-      case 'button':
-        sendButtonMessage(senderID);
-        break;
-
-      case 'generic':
-        sendGenericMessage(senderID);
-        break;
-
-      case 'quick reply':
-        sendQuickReply(senderID);
-        break;        
-
-      case 'typing on':
+      case 'menu':
         sendTypingOn(senderID);
+        sendMainMenu(senderID);
+      break;
+
+      case 'special':
+        sendTypingOn(senderID);
+        sendAllSpecial(recipientId);
+        break;
+
+      case 'special dishes':
+        sendTypingOn(senderID);
+        sendAllSpecial(recipientId);
         break;        
 
-      case 'typing off':
-        sendTypingOff(senderID);
+      case 'party':
+        sendTypingOn(senderID);
+        sendPartySpecial(recipientId);
+        break;        
+
+      case 'party special':
+        sendTypingOn(senderID);
+        sendPartySpecial(recipientId);
         break;        
 
       default:
@@ -682,6 +687,10 @@ function sendAllSpecial(recipientId){
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Famous-Favorites/c=6239/clear/",
               title: "Checkout"
+            },{
+              type: "postback",
+              payload: "DEVELOPER_DEFINED_PAYLOAD_FOR_ALL_SPECIAL_BACK",
+              title: "Back"
             }],
           }, {
             title: "Famous Greek Combo",
@@ -692,6 +701,10 @@ function sendAllSpecial(recipientId){
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Famous-Favorites/c=6239/clear/",
               title: "Checkout"
+            },{
+              type: "postback",
+              payload: "DEVELOPER_DEFINED_PAYLOAD_FOR_ALL_SPECIAL_BACK",
+              title: "Back"
             }]
           },{
             title: "Moussaka",
@@ -702,6 +715,10 @@ function sendAllSpecial(recipientId){
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Famous-Favorites/c=6239/clear/",
               title: "Checkout"
+            },{
+              type: "postback",
+              payload: "DEVELOPER_DEFINED_PAYLOAD_FOR_ALL_SPECIAL_BACK",
+              title: "Back"
             }]
           }]
         }
@@ -733,6 +750,10 @@ function sendDailySpecial(recipientId){
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Family-Meals/c=5864/clear/",
               title: "Checkout"
+            },{
+              type: "postback",
+              payload: "DEVELOPER_DEFINED_PAYLOAD_FOR_DAILY_SPECIAL_BACK",
+              title: "Back"
             }],
           }, {
             title: "Family Meal for 4 - Subs and Pitas",
@@ -743,6 +764,10 @@ function sendDailySpecial(recipientId){
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Family-Meals/c=5864/clear/",
               title: "Checkout"
+            },{
+              type: "postback",
+              payload: "DEVELOPER_DEFINED_PAYLOAD_FOR_DAILY_SPECIAL_BACK",
+              title: "Back"
             }]
           },{
             title: "Family Meal for 6 - Grilled Chicken with Rice!",
@@ -753,6 +778,10 @@ function sendDailySpecial(recipientId){
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Family-Meals/c=5864/clear/",
               title: "Checkout"
+            },{
+              type: "postback",
+              payload: "DEVELOPER_DEFINED_PAYLOAD_FOR_DAILY_SPECIAL_BACK",
+              title: "Back"
             }]
           }]
         }
@@ -783,6 +812,10 @@ function sendPartySpecial(recipientId){
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Party-Platters/c=2761/clear/",
               title: "Checkout"
+            },{
+              type: "postback",
+              payload: "DEVELOPER_DEFINED_PAYLOAD_FOR_PARTY_SPECIAL_BACK",
+              title: "Back"
             }],
           }, {
             title: "Deli Wrap Tray",
@@ -793,6 +826,10 @@ function sendPartySpecial(recipientId){
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Party-Platters/c=2761/clear/",
               title: "Checkout"
+            },{
+              type: "postback",
+              payload: "DEVELOPER_DEFINED_PAYLOAD_FOR_PARTY_SPECIAL_BACK",
+              title: "Back"
             }]
           },{
             title: "Famous Cubans Tray",
@@ -803,6 +840,10 @@ function sendPartySpecial(recipientId){
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Party-Platters/c=2761/clear/",
               title: "Checkout"
+            },{
+              type: "postback",
+              payload: "DEVELOPER_DEFINED_PAYLOAD_FOR_PARTY_SPECIAL_BACK",
+              title: "Back"
             }]
           }]
         }
