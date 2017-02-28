@@ -284,6 +284,11 @@ function receivedMessage(event) {
         sendTypingOn(senderID);
         sendPartySpecial(senderID);
         break;        
+
+      case 'hungry':  
+
+
+        break;
  
       default:
         sendTypingOn(senderID);
@@ -377,8 +382,7 @@ function receivedQuickReplyPostback(event) {
    }else{
         sendTypingOn(senderID);
         sendWelcomeMessage(senderID);
-   } 
-
+   }
 }
 
 /*
@@ -985,7 +989,7 @@ function greetText(){
     recipient: {
       id: recipientId
     },message:{
-      text:"Hiii, We'r happy to see u.."
+      text:"Hi, We'r happy to see u.."
     }
   };
 
