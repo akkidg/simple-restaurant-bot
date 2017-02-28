@@ -260,9 +260,6 @@ function receivedMessage(event) {
       case 'menu':
         sendTypingOn(senderID);
         sendMainMenu(senderID);
-        setTimeout(function(){    
-            greetText(senderID);
-          },delayMills);
       break;
 
       case 'special':
@@ -286,13 +283,17 @@ function receivedMessage(event) {
         break;        
 
       case 'hungry':  
-
+        
 
         break;
  
       default:
         sendTypingOn(senderID);
-        sendWelcomeMessage(senderID);     
+        sendWelcomeMessage(senderID);
+
+        setTimeout(function(){    
+            greetText(senderID);
+          },delayMills);     
     }
   } else if (messageAttachments) {
     sendTypingOn(senderID);
