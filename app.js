@@ -984,7 +984,7 @@ function showReviews(recipientId){
   callSendAPI(messageData);*/
 }
 
-function greetText(){
+function greetText(recipientId){
   var messageData = {
     recipient: {
       id: recipientId
