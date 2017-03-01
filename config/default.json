@@ -1,6 +1,6 @@
 {
-    "appSecret": "f2364133dd19d2e65ceb8e7c022493e1",
-    "pageAccessToken": "EAAaSRhwxjrcBAGZCUbBvOSUx6d5eLWul1b8S5zEOwHFgZCVON2nzuhg4fg3XHeOIeqzGrwc4Jn2I7yOhHvOKtDYs1GiQXCdfpCauOLvtLLSdEucroUrfTTcxu2dMnge7tEy5Nohzmy9O9uI7sCh8RGLAoL2ZC7ZAlceGdGGwigZDZD",
-    "validationToken": "verification_is_imp",
-    "serverURL": "https://simple-restaurant-bot.herokuapp.com/"
+    "appSecret": "test",
+    "pageAccessToken": "test",
+    "validationToken": "test",
+    "serverURL": "test-url"
 }
