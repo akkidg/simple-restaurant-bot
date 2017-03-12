@@ -1025,7 +1025,7 @@ function showTestimonials(recipientId){
 
 function showReviews(recipientId){
   console.log("reviews length :" + reviews.length);
-  /*while(reviewCounter < reviews.length){
+  while(reviewCounter < reviews.length){
     var messageData = {
       recipient: {
         id: recipientId
@@ -1037,7 +1037,7 @@ function showReviews(recipientId){
     console.log("msg" + reviewCounter + " msgis " + reviews[reviewCounter]);
     setTimeout(function(){
       reviewCounter++;
-    },delayMills);*/
+    },delayMills);
   }
 
   reviewCounter = 0;
