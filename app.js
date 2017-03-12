@@ -1024,7 +1024,7 @@ function showTestimonials(recipientId){
 }
 
 function showReviews(recipientId){
-  while(i < reviews.length){
+  while(reviewCounter < reviews.length){
     var messageData = {
     recipient: {
       id: recipientId
@@ -1037,6 +1037,7 @@ function showReviews(recipientId){
       i++;
     },delayMills);
   }
+  reviewCounter = 0;
 }
 
 function greetText(recipientId){
