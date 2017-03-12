@@ -258,7 +258,13 @@ function receivedMessage(event) {
     // If we receive a text message, check to see if it matches any special
     // keywords and send back the corresponding example. Otherwise, just echo
     // the text we received.
-    switch (messageText) {      
+    switch (messageText) {    
+
+      case 'todays special':
+        sendTypingOn(senderID);
+        sendAllSpecial(senderID);        
+      break;  
+
       case 'menu':
         sendTypingOn(senderID);
         sendMainMenu(senderID);
@@ -282,12 +288,25 @@ function receivedMessage(event) {
       case 'party special':
         sendTypingOn(senderID);
         sendPartySpecial(senderID);
-        break;        
+        break;       
 
-      case 'hungry':  
+      case 'opening hours':
+        sendTypingOn(senderID);
+        sendOpeningHoursText(senderID);
+      break;   
+
+      case 'gallery':
+        sendTypingOn(senderID);
+        showGallery(senderID);
+      break;
+
+      case 'reviews':
+
+      break;      
+
+      case 'hungry':
         
-
-        break;
+      break;
  
       default:
         sendTypingOn(senderID);
@@ -1032,6 +1051,37 @@ function greetText(recipientId){
     },message:{
       text:"Hi, We'r happy to see u.."
     }
+  };
+
+  callSendAPI(messageData);
+}
+
+function showGallery(recipientId){
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {        
+      attachment:{
+        type: "template",
+        payload: {
+          template_type: "generic",
+          elements: [{
+            title: "",
+            subtitle:"",
+            image_url: "https://www.famousgreeksalads.com/_upload/slideshow/13401483603012685235.jpg",
+          }, {
+            title: "",
+            subtitle:"",
+            image_url: "https://www.famousgreeksalads.com/_upload/slideshow/13401465644405939908.jpg",
+          },{
+            title: "",
+            subtitle:"",
+            image_url: "https://www.famousgreeksalads.com/_upload/slideshow/13401465644405939908.jpg",
+          }]
+        }
+      }
+    }    
   };
 
   callSendAPI(messageData);
