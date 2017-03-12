@@ -314,6 +314,11 @@ function receivedMessage(event) {
         showGallery(senderID);*/
       break;
 
+      case 'testimonials':
+        sendTypingOn(senderID);
+        showTestimonials(senderID);
+      break;
+
       case 'reviews':
         sendTypingOn(senderID);
         showReviews(senderID);
