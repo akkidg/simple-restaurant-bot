@@ -403,6 +403,7 @@ function receivedQuickReplyPostback(event) {
           sendTypingOn(senderID);
           sendPartySpecial(senderID);
         case 'DEVELOPER_DEFINED_PAYLOAD_REVIEWS':
+          sendTypingOn(senderID);
           showReviews(senderID);
         break;
         case 'DEVELOPER_DEFINED_PAYLOAD_FOR_TESTIMONALS':
