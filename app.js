@@ -1029,7 +1029,7 @@ function showReviews(recipientId){
     recipient: {
       id: recipientId
     },message:{
-      text:reviews[i]
+      text:reviews[reviewCounter]
     }
     };
     callSendAPI(messageData);
