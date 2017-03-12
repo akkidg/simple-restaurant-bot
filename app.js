@@ -261,6 +261,11 @@ function receivedMessage(event) {
     // the text we received.
     switch (messageText) {    
 
+      case 'today\'s special':
+        sendTypingOn(senderID);
+        sendAllSpecial(senderID);
+      break;
+
       case 'todays special':
         sendTypingOn(senderID);
         sendAllSpecial(senderID);        
