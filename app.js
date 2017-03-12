@@ -1024,20 +1024,22 @@ function showTestimonials(recipientId){
 }
 
 function showReviews(recipientId){
-  /*while(reviewCounter < reviews.length){
-    var messageData = {
-    recipient: {
-      id: recipientId
-    },message:{
-      text:reviews[reviewCounter]
-    }
+  console.length("reviews length :" + reviews.length);
+  while(reviewCounter < reviews.length){
+    /*var messageData = {
+      recipient: {
+        id: recipientId
+      },message:{
+        text:reviews[reviewCounter]
+      }
     };
-    callSendAPI(messageData);
+    callSendAPI(messageData);*/
     console.log("msg" + reviewCounter + " msgis " + reviews[reviewCounter]);
     setTimeout(function(){
       reviewCounter++;
     },delayMills);
-  }*/
+  }
+  
   reviewCounter = 0;
 }
 
