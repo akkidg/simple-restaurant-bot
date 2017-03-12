@@ -26,6 +26,7 @@ app.use(express.static('public'));
 
 // Time Delay variable
 var delayMills = 1000;
+var reviewCounter = 0;
 
 var reviews = [
   "Christina R.\n This place gets busy! And it seems like there are some repeat customers because the waitress (the only waitress working) knew people's names. The waitress was FAST, efficient, patient, she was great for handling all of those tables. She was so chipper and happy too. The food was spot on, there is a reason why 'famous' is in the name of their restaurant. You can sit inside or outside where there are tables out front. I've seen people bring their dogs with them to sit outside too. The entire staff is nice, even the nice guy that brings the food out. They do take out, and deliver ($50 min I believe).",
@@ -1023,7 +1024,6 @@ function showTestimonials(recipientId){
 }
 
 function showReviews(recipientId){
-  var i = 0;
   while(i < reviews.length){
     var messageData = {
     recipient: {
