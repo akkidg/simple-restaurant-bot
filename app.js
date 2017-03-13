@@ -407,6 +407,7 @@ function receivedQuickReplyPostback(event) {
         case 'DEVELOPER_DEFINED_PAYLOAD_FOR_PARTY_SPECIAL':
           sendTypingOn(senderID);
           sendPartySpecial(senderID);
+          break;
         case 'DEVELOPER_DEFINED_PAYLOAD_REVIEWS':
           sendTypingOn(senderID);
           showReviews(senderID);
