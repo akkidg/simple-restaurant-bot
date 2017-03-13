@@ -486,6 +486,7 @@ function receivedPostback(event) {
         case 'DEVELOPER_DEFINED_PAYLOAD_FOR_PARTY_SPECIAL':
           sendTypingOn(senderID);
           sendPartySpecial(senderID);
+        break
         case 'DEVELOPER_DEFINED_PAYLOAD_FOR_ALL_SPECIAL_BACK':          
           sendQuickRepliesActions(senderID);
         break;
@@ -942,7 +943,7 @@ function sendPartySpecial(recipientId){
             title: "Chicken Souvlaki Or Gyro Platter",
             subtitle:"This platter gives your guests a chance to build their own gyro with the pita, lettuce, tomato, onion, and tzatziki sauce all separate.",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Party-Platters/c=2761/clear/",               
-            image_url: "https://www.yelp.com/biz_photos/famous-greek-salads-clearwater?select=wlMw-SFnyOwIOWap2x1ckg",
+            image_url: "https://s3-media1.fl.yelpcdn.com/bphoto/dvMm1v48QecM-Ry6lorUug/o.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Party-Platters/c=2761/clear/",
