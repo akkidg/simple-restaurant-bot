@@ -627,7 +627,7 @@ function sendMainMenu(recipientId){
           elements: [{
             title: "Family Meals",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Family-Meals/c=5864/clear/",               
-            image_url: "https://www.yelp.com/biz_photos/famous-greek-salads-clearwater?select=WYblFLmYup8mR7ToE5AJiw",
+            image_url: "https://s3-media1.fl.yelpcdn.com/bphoto/WYblFLmYup8mR7ToE5AJiw/o.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Family-Meals/c=5864/clear/",
@@ -644,7 +644,7 @@ function sendMainMenu(recipientId){
           }, {
             title: "Soups & Starters",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Soups-and-Starters/c=1518/clear/",               
-            image_url: "https://www.yelp.com/biz_photos/famous-greek-salads-clearwater?select=vf6L_630p5gZvbxZFMDq0w",
+            image_url: "https://s3-media1.fl.yelpcdn.com/bphoto/vf6L_630p5gZvbxZFMDq0w/o.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Soups-and-Starters/c=1518/clear/",
@@ -661,7 +661,7 @@ function sendMainMenu(recipientId){
           },{
             title: "Famous Favorites",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Famous-Favorites/c=6239/clear/",               
-            image_url: "https://www.yelp.com/biz_photos/famous-greek-salads-clearwater?select=lYkV85S_UgUdfcGN1e9whw",
+            image_url: "https://s3-media1.fl.yelpcdn.com/bphoto/lYkV85S_UgUdfcGN1e9whw/o.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Famous-Favorites/c=6239/clear/",
@@ -678,7 +678,7 @@ function sendMainMenu(recipientId){
           },{
             title: "Party Salads",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Party-Salads/c=1587/clear/",               
-            image_url: "https://www.yelp.com/biz_photos/famous-greek-salads-clearwater?select=2Yf356OTZrAt9nLK5vwCHg",
+            image_url: "https://s3-media1.fl.yelpcdn.com/bphoto/2Yf356OTZrAt9nLK5vwCHg/o.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Party-Salads/c=1587/clear/",
@@ -695,7 +695,7 @@ function sendMainMenu(recipientId){
           },{
             title: "Party Platters",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Party-Platters/c=2761/clear/",               
-            image_url: "https://www.yelp.com/biz_photos/famous-greek-salads-clearwater?select=6hDV4khet707gxzAi61JGg",
+            image_url: "https://s3-media4.fl.yelpcdn.com/bphoto/6hDV4khet707gxzAi61JGg/o.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Party-Platters/c=2761/clear/",
@@ -712,7 +712,7 @@ function sendMainMenu(recipientId){
           },{
             title: "Deserts",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Desserts/c=1524/clear/",               
-            image_url: "https://www.yelp.com/biz_photos/famous-greek-salads-clearwater?select=lpSphqp_DFKIXJmHkIG7NQ",
+            image_url: "https://s3-media1.fl.yelpcdn.com/bphoto/lpSphqp_DFKIXJmHkIG7NQ/o.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Desserts/c=1524/clear/",
