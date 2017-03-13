@@ -817,7 +817,7 @@ function sendAllSpecial(recipientId){
             title: "1/4 Greek Chicken",
             subtitle: "Marinated and baked crisp with oregano and lemon served with a side Greek salad and choice of Greek potatoes or rice.",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Famous-Favorites/c=6239/clear/",               
-            image_url: "https://www.famousgreeksalads.com/_upload/slideshow/13401483603012685235.jpg",
+            image_url: "https://s3-media3.fl.yelpcdn.com/bphoto/pRlwiEvBGd1bGvTWEOXKjQ/o.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Famous-Favorites/c=6239/clear/",
@@ -831,7 +831,7 @@ function sendAllSpecial(recipientId){
             title: "Famous Greek Combo",
             subtitle:"Choice of Grilled Chicken or Sliced Gyro over rice with a side Greek salad and choice of any Famous Spread with pita!",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Famous-Favorites/c=6239/clear/",               
-            image_url: "https://www.famousgreeksalads.com/_upload/slideshow/13401465644405939908.jpg",
+            image_url: "https://s3-media1.fl.yelpcdn.com/bphoto/QSE7ewgmNsDgv8-AN2iYVA/o.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Famous-Favorites/c=6239/clear/",
@@ -845,7 +845,7 @@ function sendAllSpecial(recipientId){
             title: "Moussaka",
             subtitle:"Layers of eggplant, ground beef, and a creamy bechamel with a hint of cinnamon. Served with a side Greek salad!",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Famous-Favorites/c=6239/clear/",               
-            image_url: "https://www.famousgreeksalads.com/_upload/slideshow/13401465644405939908.jpg",
+            image_url: "https://s3-media2.fl.yelpcdn.com/bphoto/FTbUZ4g-50I0ZflC2Jspxw/o.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Famous-Favorites/c=6239/clear/",
@@ -880,7 +880,7 @@ function sendDailySpecial(recipientId){
             title: "Family Meal for 4 - Grilled Chicken with Rice!",
             subtitle:"Choice of sliced gyro or grilled chicken, a family size Greek salad, and tzatziki or hummus with pita!",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Family-Meals/c=5864/clear/",               
-            image_url: "https://www.famousgreeksalads.com/_upload/slideshow/13401483603012685235.jpg",
+            image_url: "https://s3-media1.fl.yelpcdn.com/bphoto/L3-CkhGyBG7ZeJvgZU_KwA/o.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Family-Meals/c=5864/clear/",
@@ -894,7 +894,7 @@ function sendDailySpecial(recipientId){
             title: "Family Meal for 4 - Subs and Pitas",
             subtitle:"A great selection of our Famous sandwiches with a family size Greek salad!",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Family-Meals/c=5864/clear/",               
-            image_url: "https://www.famousgreeksalads.com/_upload/slideshow/13401465644405939908.jpg",
+            image_url: "https://s3-media4.fl.yelpcdn.com/bphoto/w_SKQJwRBF_iVhnGVYWHBQ/o.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Family-Meals/c=5864/clear/",
@@ -908,7 +908,7 @@ function sendDailySpecial(recipientId){
             title: "Family Meal for 6 - Grilled Chicken with Rice!",
             subtitle:"Choice of grilled chicken or sliced gyro, a family size Greek salad, and choice of tzatziki or hummus with pita!",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Family-Meals/c=5864/clear/",               
-            image_url: "https://www.famousgreeksalads.com/_upload/slideshow/13401465644405939908.jpg",
+            image_url: "https://s3-media3.fl.yelpcdn.com/bphoto/2RFG6peA1gDGqX73zdfoZg/o.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Family-Meals/c=5864/clear/",
@@ -942,7 +942,7 @@ function sendPartySpecial(recipientId){
             title: "Chicken Souvlaki Or Gyro Platter",
             subtitle:"This platter gives your guests a chance to build their own gyro with the pita, lettuce, tomato, onion, and tzatziki sauce all separate.",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Party-Platters/c=2761/clear/",               
-            image_url: "https://www.famousgreeksalads.com/_upload/slideshow/13401483603012685235.jpg",
+            image_url: "https://www.yelp.com/biz_photos/famous-greek-salads-clearwater?select=wlMw-SFnyOwIOWap2x1ckg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Party-Platters/c=2761/clear/",
@@ -956,7 +956,7 @@ function sendPartySpecial(recipientId){
             title: "Deli Wrap Tray",
             subtitle:"Our wraps our prepared on tomato basil and spinach tortillas. Choose up to 3 options!",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Party-Platters/c=2761/clear/",               
-            image_url: "https://www.famousgreeksalads.com/_upload/slideshow/13401465644405939908.jpg",
+            image_url: "https://s3-media3.fl.yelpcdn.com/bphoto/2RFG6peA1gDGqX73zdfoZg/o.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Party-Platters/c=2761/clear/",
@@ -970,7 +970,7 @@ function sendPartySpecial(recipientId){
             title: "Famous Cubans Tray",
             subtitle:"Always a party favorite!",
             item_url: "https://www.famousgreeksalads.com/order-food-online/Party-Platters/c=2761/clear/",               
-            image_url: "https://www.famousgreeksalads.com/_upload/slideshow/13401465644405939908.jpg",
+            image_url: "https://s3-media2.fl.yelpcdn.com/bphoto/wlMw-SFnyOwIOWap2x1ckg/o.jpg",
             buttons: [{
               type: "web_url",
               url: "https://www.famousgreeksalads.com/order-food-online/Party-Platters/c=2761/clear/",
