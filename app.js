@@ -866,7 +866,6 @@ function sendAllSpecial(recipientId){
   callSendAPI(messageData);
 }
 
-
 function sendDailySpecial(recipientId){
 
   var messageData = {
